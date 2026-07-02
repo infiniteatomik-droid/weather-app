@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Практика</title>
+</head>
+<style>
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 20px;
+    margin: 0;
+}
+
+.kanban-app {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#todo-form input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#todo-form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.kanban-board {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    background-color: #ebecf0;
+    border-radius: 8px;
+    padding: 15px;
+    min-height: 400px;
+}
+
+.column h2 {
+    font-size: 18px;
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.task-card {
+    background-color: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#todo-list, #progress-list, #done-list {
+    /* Растягиваем колонку по вертикали минимум на 400 или 500 пикселей */
+    min-height: 100%; 
+     /* Чтобы визуально видеть, куда именно можно бросать карточку, */
+    background-color: rgba(0, 0, 0, 0.03); 
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+</style>
+<body>
+    <div class="kanban-app">
+        <form id="todo-form">
+            <input type="text"
+            id="todo-input"
+            placeholder="Что нужно сделать?"
+            required
+            >
+            <button type="submit">Добавить</button>
+        </form>
+        <div class="kanban-board">
+            <div class="column">
+                <h2>Планы</h2>
+                <div class="task-list" id="todo-list">
+
+                </div>
+            </div>
+
+            <div class="column">
+                <h2>В работе</h2>
+                <div class="task-list" id="progress-list">
+
+                </div>
+            </div>
+
+            <div class="column">
+                <h2>Готово</h2>
+                <div class="task-list" id="done-list">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="practice.js"></script>
+</body>
+</html>
