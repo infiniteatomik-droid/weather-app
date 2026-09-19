@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebe5 0%, #4a89ff 100%); /* Красивый градиент на фоне */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.weather-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  width: 320px;
+}
+
+/* Стили для строки поиска */
+.search-box {
+  display: flex;
+  gap: 10px; /* Отступ между инпутом и кнопкой */
+  margin-bottom: 30px;
+}
+
+#city-input {
+  flex: 1; /* Инпут занимает всё свободное место */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+#city-input:focus {
+  border-color: #4a89ff;
+}
+
+#search-btn {
+  padding: 10px 15px;
+  background-color: #4a89ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+#search-btn:active {
+  transform: scale(0.99);
+}
+
+#search-btn:hover {
+  background-color: #3572e6; /* Темнеет при наведении */
+}
+
+/* Стили текста */
+#city-name {
+  margin: 0 0 5px 0;
+  font-size: 28px;
+  color: #333;
+}
+
+#description {
+  margin: 0;
+  color: #888;
+  font-size: 16px;
+  text-transform: capitalize; /* Первая буква заглавная */
+}
+
+#temp {
+  margin-top: 20px;
+  font-size: 56px;
+  font-weight: bold;
+  color: #4a89ff;
+}
