@@ -1,8 +1,7 @@
-import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react' // или @vitejs/plugin-react
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/weather-app/',
+  base: '/weather-app/', // 👈 ВАЖНО: Добавь эту строчку (слэши с двух сторон!)
 })
