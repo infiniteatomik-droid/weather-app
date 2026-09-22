@@ -28,7 +28,7 @@ export default function App() {
       const geoData = await geoRes.json();
 
       if (!geoData.results || geoData.results.length === 0) {
-        alert("Город не найден!");
+        alert("City is not found!");
         setLoading(false);
         return;
       }
@@ -50,6 +50,7 @@ export default function App() {
       setWeather(formattedData);
     } catch (err) {
       console.error("Opps, whats went wrong:", err);
+      alert('Opps, whats went wrong, you may check the console!')
     } finally {
       setLoading(false);
     }
@@ -81,7 +82,7 @@ export default function App() {
           
           <div className="details-grid">
             <div className="detail-item">
-              <div className="detail-label"></div>
+              <div className="detail-label">Humidity</div>
               <div className="detail-value">{weather.airHumidity}%</div>
             </div>
             
