@@ -3,7 +3,7 @@
 A modern, responsive, and beautifully designed Weather Application featuring a glassmorphism UI. This project displays real-time weather details for any city globally using production-ready APIs and a fully automated CI/CD pipeline.
 
 ##  Live Demo
-[ Click here to view the live project](https://github.io)
+[ Click here to view the live project](https://infiniteatomik-droid.github.io/weather-app/)
 
 ---
 
