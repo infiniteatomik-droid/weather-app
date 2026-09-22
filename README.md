@@ -1,13 +1,13 @@
-Weather App (React + TypeScript + Vite)
+## Weather App (React + TypeScript + Vite)
 
 A modern, responsive, and beautifully designed Weather Application featuring a glassmorphism UI. This project displays real-time weather details for any city globally using production-ready APIs and a fully automated CI/CD pipeline.
 
-Live Demo
+## Live Demo
 [ Click here to view the live project](https://infiniteatomik-droid.github.io/weather-app/)
 
 ---
 
-The Refactoring Journey (What I Did)
+## The Refactoring Journey (What I Did)
 This project underwent a massive upgrade to meet modern frontend development standards:
 * **Migration to TypeScript:** Completely rewrote the legacy JavaScript codebase into strictly typed **TypeScript (TSX)**, adding proper interfaces (`WeatherData`) for robust state management.
 * **Architecture Upgrade:** Moved the environment from standard React scripts to **Vite** for blazing-fast local development and optimized production builds.
